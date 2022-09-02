@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>skusov-portfolio</title>
+    <link rel="icon" href="img\fav.jpg">
+    <link rel="stylesheet" href="css/style-common.css">
+    <link rel="stylesheet" href="css/style-portfolio.css">
+</head>
+<body>
+    <div id="blur" class="container">
+
+        <div class="menu">
+            <a href="index.html"><img src="img/face.png" alt=""></a>
+            <div class="name f-name"><a href="index.html">Сергей Кусов</a></div>
+            <div class="profession f-profession">html/css developer</div>
+            <div class="menu-box">
+                <div id="a-main" class="menu-link f-link"><a href="index.html">Главная</a></div>
+                <div id="a-portfolio" class="menu-link f-link"><a href="portfolio.html">Портфолио</a></div>
+                <div id="a-contacts" class="menu-link f-link"><a href="contacts.html">Контакты</a></div>
+            </div>
+            <div class="copyright f-copyright">&copy;Сергей Кусов, 2022</div>
+        </div>
+        
+        <div class="info">
+
+        <div class="menu-small">
+
+        <div class="name-block-small">
+            <a href="index.html"><img src="img/face.png" alt=""></a>
+            <div class="name-small f-name-small"><a href="index.html">Сергей Кусов</a></div>
+            <div class="profession-small f-profession-small">html/css developer</div>
+            <div class="copyright-small f-copyright-small">&copy;Сергей Кусов, 2022</div>
+        </div>
+
+            <div class="menu-box-small">
+                <div class="menu-link-small f-link-small">
+                    <a href="index.html">Главная</a>
+                </div>
+                <div class="menu-link-small f-link-small">
+                    <a href="portfolio.html">Портфолио</a>
+                </div>
+                <div class="menu-link-small f-link-small">
+                    <a href="contacts.html">Контакты</a>
+                </div>
+            </div>
+
+        </div>
+
+            <div class="portfolio-topic">
+                <p class="t-topic f-t-topic">Портфолио</p>
+            </div>
+
+            <div class="portfolio-examples">
+                <div onclick="look('window1', 'blur'); return false;" class="miniature">
+                    <img src="img\portfolio-1-ico.png" alt="">
+                    <p>Сайт-визитка</p>
+                </div>
+
+                <div onclick="look('window0', 'blur'); return false;" class="miniature">
+                    <img src="img\portfolio-2-ico.jpg" alt="">
+                    <p>Сайт-визитка (новый дизайн)</p>
+                </div>
+
+                <div onclick="look('window0', 'blur'); return false;" class="miniature">
+                    <img src="img\portfolio-3-ico.jpg" alt="">
+                    <p>Онлайн-магазин (автомобильные шины)</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="window0" class="portfolio-window">
+    <div class="portfolio-show">         
+
+        <div class="cl-btn-2">
+
+            <div class="pages">
+                
+            </div>
+            
+            <div onclick="look('window0', 'blur'); return false;" class="cl-btn-2-cross">
+                <div class="leftright"></div>
+                <div class="rightleft"></div>
+                <span class="close-btn">закрыть</span>
+            </div>
+        </div>
+
+        <div class="show-content">
+            <div class="loader"></div>
+            <div class="loader-info">Сайт находится в разработке...</div>
+        </div>
+
+    </div>
+    </div>
+
+
+
+    <div id="window1" class="portfolio-window">
+    <div id="portfolio_show" class="portfolio-show">         
+
+        <div class="cl-btn-2">
+
+            <div class="pages">
+
+                <div onclick="showPage('portfolio-1-1', 'portfolio-1-2', 'portfolio-1-3'); return false;" class="show-page">
+                    <p>Page 1</p>
+                </div>
+
+                <div onclick="showPage('portfolio-1-2', 'portfolio-1-1', 'portfolio-1-3'); return false;" class="show-page">
+                    <p>Page 2</p>
+                </div>
+
+                <div onclick="showPage('portfolio-1-3', 'portfolio-1-1', 'portfolio-1-2'); return false;" class="show-page">
+                    <p>Page 3</p>
+                </div>
+
+            </div>
+            
+            <div onclick="look('window1', 'blur'); return false;" class="cl-btn-2-cross">
+                <div class="leftright"></div>
+                <div class="rightleft"></div>
+                <span class="close-btn">закрыть</span>
+            </div>
+        </div>
+
+        <div class="show-content">
+            <img id="portfolio-1-1" class="portfolio-1-1" src="img\portfolio-1-1.png" alt="">
+            <img id="portfolio-1-2" class="portfolio-1-2" src="img\portfolio-1-2.png" alt="">
+            <img id="portfolio-1-3" class="portfolio-1-3" src="img\portfolio-1-3.png" alt="">
+        </div>
+
+    </div>
+    </div>
+
+    <script src="scripts\script-portfolio.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'Oswald';
+    src: local('Oswald Light'), local('Oswald-Light'),
+        url('../fonts/oswald/Oswald-Light.woff2') format('woff2'),
+        url('../fonts/oswald/Oswald-Light.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato Medium'), local('Lato-Medium'),
+        url('../fonts/lato/Lato-Medium.woff2') format('woff2'),
+        url('../fonts/lato/Lato-Medium.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+
+:root {
+    --first-b-font-family: "Oswald";
+    --first-b-font-color: #2e2e2e;
+    --first-b-font-size: 30px;
+    --first-b-font-weight: bold;
+    
+    --first-s-font-family: "Oswald";
+    --first-s-font-color: #6a6867;
+    --first-s-font-size: 12px;
+    --first-s-font-weight: normal;
+
+    --second-b-font-family: "Lato";
+    --second-b-font-color: #6a6867;
+    --second-b-font-size: 30px;
+    --second-b-font-weight: bold;
+
+    --second-s-font-family: "Lato";
+    --second-s-font-size: 16px;
+    --second-s-font-color: #6a6867;
+    --second-s-font-weight: normal;
+
+    --fl-font-family: "Lato";
+    --fl-font-size: 60px;
+    --fl-font-color: #2e2e2e;
+    --fl-font-weight: bold;
+}

@@ -1,0 +1,113 @@
+@import url(../css/style-fonts.css);
+@import url(../css/style-colors.css);
+
+/* -------------------------------------------------------------------- ВЕРХНИЕ КАРТИНКИ */
+
+.index-img{
+    text-align: center;
+    margin-top: 30px;
+    display: flex;
+}
+
+.index-img>img{
+    width: 30%;
+    margin: 0 auto;
+    border-radius: 80px 20px;
+    box-shadow: 2px 1px 0px var(--first-color), 6px 5px 0px var(--fifth-color);
+}
+
+/* -------------------------------------------------------------------- ОСНОВНАЯ ИНФОРМАЦИЯ */
+
+.index-main{
+    margin-top: 100px;
+    padding-left: 20px;
+}
+
+.main-logo{
+    margin-top: 30px;
+    display: flex;
+}
+
+.index-main-left{
+    padding-left: 50px;
+    width: 50%;
+}
+
+.index-portfolio-link{
+    font-family: var(--second-s-font-family);
+    font-size: var(--second-s-font-size);
+    color: var(--second-s-font-color);
+}
+
+.index-boxlink{
+    margin-top: 20px;
+    padding: 5px;
+    color: rgb(49, 49, 49);
+    border: solid 3px var(--fifth-color);
+    border-radius: 10px;
+    display: inline-block;
+}
+
+/* -------------------------------------------------------------------- ЛОГОТИП НА ОСНОВНОЙ ИНФОРМАЦИИ */
+
+.index-main-logo{
+    margin: 0 auto;
+    width: 50%;
+    height: 100%;
+    display: table;
+    text-align: center;
+}
+
+.index-main-logo>img{
+    width: 50%;
+}
+
+/* -------------------------------------------------------------------- @@@@@@@@@@@@@@@@@@@@ */
+
+@media (max-width: 880px){
+    .index-portfolio-link{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 767px){
+    .index-main{
+        margin-top: 0;
+    }
+
+    .index-portfolio-link{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 620px){
+    .index-portfolio-link{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 420px){
+    .index-main{
+        margin-top: 0;
+    }
+
+    .main-logo{
+        display: block;
+    }
+
+    .index-main-logo>img{
+        margin-top: 30px;
+    }
+
+    .index-main-left{
+        width: 100%;
+    }
+
+    .index-main-logo{
+        width: 80%;
+    }
+
+    .index-portfolio-link{
+        font-size: 16px;
+    }
+}
